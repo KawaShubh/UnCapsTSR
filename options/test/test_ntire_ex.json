@@ -1,0 +1,34 @@
+{
+  "name": "RGT_giana"
+  , "suffix": null
+  , "model": "ntire_ex"
+  , "scale": 4
+  , "gpu_ids": [0,1]
+
+  , "datasets": {
+    "test_1": { // the 1st test dataset
+      "name": "Test_HR1"
+      , "mode": "LR"
+      //, "dataroot_HR": "/media/ml/Data Disk/CapsNetwork/Unsupervised/DATASET/Test/HR"
+      , "dataroot_LR": "/cluster/home/shubhdk/Datasets_test/Giana/giana_SR/"
+    }
+  }
+
+  , "path": {
+    "root": "/cluster/home/shubhdk/RGT/"
+    , "pretrain_model_G": "/cluster/home/shubhdk/RGT/experiments/RGT_1/models/33000_G.pth"
+  }
+
+  , "network_G": {
+    "which_model_G": "SRGAN_Gen" // RRDB_net | sr_resnet
+    , "norm_type": null
+    , "mode": "CNA"
+    , "nf": 32
+    , "nb": 23
+    , "in_nc": 3
+    , "out_nc": 3
+
+    , "gc": 32
+    , "group": 1
+  }
+}
