@@ -28,4 +28,4 @@ python test.py -opt PATH-to-json_file
 
 The list of packages required to run the code is given in `uncapstsr.yml` file.
 
-For any problem, you may contact at <anjalisarvaiyaas@gmail.com>.
+For any problem, you may contact at <anjali.sarvaiya.as@gmail.com>.
